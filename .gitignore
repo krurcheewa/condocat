@@ -1,0 +1,11 @@
+# Files uploaded at runtime (keep sample images and the .htaccess)
+uploads/*
+!uploads/.htaccess
+!uploads/img-*.svg
+
+# OS / editor files
+Thumbs.db
+desktop.ini
+.DS_Store
+.vscode/
+.idea/

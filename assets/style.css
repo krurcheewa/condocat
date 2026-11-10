@@ -1,0 +1,119 @@
+:root {
+  --primary: #e07a3f;
+  --primary-dark: #c4612a;
+  --bg: #fffaf4;
+  --card: #ffffff;
+  --text: #3b2f2a;
+  --muted: #8a7b72;
+  --border: #eadfd5;
+  --danger: #d64545;
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: 'Prompt', sans-serif; background: var(--bg); color: var(--text); line-height: 1.6; }
+a { color: var(--primary-dark); }
+img { max-width: 100%; }
+.container { max-width: 1140px; margin: 0 auto; padding: 0 16px; }
+main.container { padding-top: 24px; padding-bottom: 40px; min-height: 70vh; }
+h1 { font-weight: 600; font-size: 1.7rem; margin: .3em 0; }
+h3 { font-weight: 500; margin: 1em 0 .5em; }
+.muted { color: var(--muted); }
+.text-danger { color: var(--danger); }
+.empty { padding: 40px; text-align: center; color: var(--muted); }
+
+/* แถบเมนู */
+.topbar { background: var(--card); border-bottom: 1px solid var(--border); position: sticky; top: 0; z-index: 10; }
+.nav { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; padding-top: 12px; padding-bottom: 12px; }
+.nav nav { display: flex; flex-wrap: wrap; gap: 4px 18px; }
+.nav nav a { text-decoration: none; color: var(--text); }
+.nav nav a:hover { color: var(--primary); }
+.logo { font-size: 1.4rem; font-weight: 600; text-decoration: none; color: var(--primary); }
+.cart-count { background: var(--primary); color: #fff; border-radius: 10px; padding: 0 7px; font-size: .8rem; }
+.footer { border-top: 1px solid var(--border); padding: 20px 0; color: var(--muted); text-align: center; font-size: .9rem; }
+
+/* ปุ่ม/ฟอร์ม */
+.btn { display: inline-block; padding: 8px 18px; border: 1px solid var(--border); background: var(--card); color: var(--text);
+  border-radius: 8px; cursor: pointer; font: inherit; text-decoration: none; }
+.btn:hover { border-color: var(--primary); }
+.btn-primary { background: var(--primary); color: #fff; border-color: var(--primary); }
+.btn-primary:hover { background: var(--primary-dark); }
+.btn-danger { color: var(--danger); }
+.btn-sm { padding: 3px 10px; font-size: .9rem; }
+.btn-block { width: 100%; margin-top: 12px; }
+input, select, textarea { font: inherit; padding: 8px 10px; border: 1px solid var(--border); border-radius: 8px; background: #fff; color: var(--text); max-width: 100%; }
+label { display: block; margin-bottom: 10px; }
+label > input:not([type=radio]):not([type=checkbox]), label > textarea, label > select { display: block; width: 100%; margin-top: 4px; }
+label.inline { display: flex; gap: 8px; align-items: center; }
+.row { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; margin-top: 12px; }
+.alert { padding: 10px 14px; border-radius: 8px; margin-bottom: 16px; }
+.alert-success { background: #e8f6ea; color: #23622f; }
+.alert-error { background: #fdeaea; color: #8c2323; }
+.note { background: #fff4e5; padding: 10px; border-radius: 8px; }
+
+/* หน้าร้าน */
+.hero { background: linear-gradient(120deg, #ffe3cc, #fff1e3); border-radius: 16px; padding: 32px 24px; margin-bottom: 20px; }
+.hero h1 { font-size: 2rem; }
+.filters { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.filters input[type=search] { flex: 1 1 200px; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 18px; }
+.card { background: var(--card); border: 1px solid var(--border); border-radius: 14px; overflow: hidden; text-decoration: none; color: inherit; transition: transform .15s, box-shadow .15s; }
+.card:hover { transform: translateY(-3px); box-shadow: 0 6px 18px rgba(0,0,0,.07); }
+.card img { width: 100%; aspect-ratio: 4/3; object-fit: cover; display: block; background: #fdf3e7; }
+.card-body { padding: 12px 14px 16px; }
+.card h3 { margin: 2px 0 6px; font-size: 1.05rem; }
+.price { color: var(--primary-dark); font-weight: 600; }
+.sizes { margin-bottom: 6px; }
+.chip { display: inline-block; border: 1px solid var(--border); border-radius: 6px; padding: 0 7px; font-size: .8rem; margin-right: 4px; }
+
+.product { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.product-img { width: 100%; border-radius: 14px; background: #fdf3e7; aspect-ratio: 4/3; object-fit: cover; }
+.size-options { display: grid; gap: 8px; }
+.size-option { display: flex; gap: 10px; align-items: flex-start; border: 1px solid var(--border); border-radius: 10px; padding: 10px 12px; cursor: pointer; background: #fff; margin: 0; }
+.size-option:has(input:checked) { border-color: var(--primary); background: #fff6ef; }
+.size-option.disabled { opacity: .5; cursor: not-allowed; }
+
+/* ตาราง/แผง */
+.table-wrap { overflow-x: auto; }
+.table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 10px; overflow: hidden; }
+.table th, .table td { padding: 10px; border-bottom: 1px solid var(--border); text-align: left; vertical-align: middle; }
+.table th { background: #fbf1e7; font-weight: 500; }
+.thumb { width: 54px; height: 42px; object-fit: cover; border-radius: 6px; vertical-align: middle; margin-right: 8px; }
+.summary { text-align: right; margin-top: 16px; }
+.summary .row { justify-content: flex-end; }
+.total { font-size: 1.25rem; font-weight: 600; color: var(--primary-dark); }
+.panel { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 20px; }
+.panel.narrow { max-width: 420px; margin: 20px auto; }
+.two-col { display: grid; grid-template-columns: 3fr 2fr; gap: 20px; align-items: start; }
+.line { display: flex; justify-content: space-between; gap: 10px; padding: 4px 0; }
+.slip { max-width: 260px; border-radius: 8px; border: 1px solid var(--border); }
+
+.badge { display: inline-block; padding: 1px 10px; border-radius: 10px; font-size: .8rem; font-weight: 500; vertical-align: middle; }
+.badge-pending { background: #fff1cc; color: #8a6200; }
+.badge-paid { background: #dceeff; color: #1d5a91; }
+.badge-shipping { background: #ece0ff; color: #5a2d91; }
+.badge-completed { background: #e0f4e3; color: #23622f; }
+.badge-cancelled { background: #fde2e2; color: #8c2323; }
+
+/* หลังร้าน */
+.admin-layout { display: grid; grid-template-columns: 210px 1fr; min-height: 100vh; }
+.sidebar { background: #3b2f2a; color: #fff; padding: 20px 0; }
+.sidebar .logo { color: #ffb37f; display: block; padding: 0 20px 16px; }
+.sidebar a.menu { display: block; color: #e8ddd5; text-decoration: none; padding: 9px 20px; }
+.sidebar a.menu:hover, .sidebar a.menu.active { background: rgba(255,255,255,.1); color: #fff; }
+.admin-main { padding: 24px; min-width: 0; }
+.stats { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 14px; margin-bottom: 24px; }
+.stat { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 16px; }
+.stat .num { font-size: 1.6rem; font-weight: 600; color: var(--primary-dark); }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0 16px; }
+.variant-table input { width: 100%; min-width: 70px; }
+.actions { display: flex; gap: 6px; flex-wrap: wrap; }
+.actions form { margin: 0; }
+
+@media (max-width: 800px) {
+  .product, .two-col, .form-grid { grid-template-columns: 1fr; }
+  .admin-layout { grid-template-columns: 1fr; min-height: 0; }
+  .sidebar { padding: 10px 0; display: flex; flex-wrap: wrap; align-items: center; }
+  .sidebar .logo { padding: 0 16px; }
+  .sidebar a.menu { padding: 6px 12px; }
+  .admin-main { padding: 16px; }
+  .hero h1 { font-size: 1.5rem; }
+}

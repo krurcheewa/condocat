@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <rect width="400" height="300" fill="#eef1f4"/>
+  <circle cx="340" cy="60" r="70" fill="#fff" opacity=".35"/><circle cx="50" cy="250" r="50" fill="#fff" opacity=".25"/>
+  <ellipse cx="200" cy="266" rx="150" ry="12" fill="#000" opacity=".08"/>
+  <rect x="80" y="248" width="240" height="18" rx="4" fill="#8d96a3"/>
+  <rect x="120" y="100" width="22" height="148" fill="#e4cfa6"/><path d="M120 108h22M120 118h22M120 128h22M120 138h22M120 148h22M120 158h22M120 168h22M120 178h22M120 188h22M120 198h22M120 208h22M120 218h22M120 228h22M120 238h22" stroke="#a87b4f" stroke-width="2"/>
+  <rect x="190" y="60" width="22" height="188" fill="#e4cfa6"/><path d="M190 68h22M190 78h22M190 88h22M190 98h22M190 108h22M190 118h22M190 128h22M190 138h22M190 148h22M190 158h22M190 168h22M190 178h22M190 188h22M190 198h22M190 208h22M190 218h22M190 228h22M190 238h22" stroke="#a87b4f" stroke-width="2"/>
+  <rect x="262" y="140" width="22" height="108" fill="#e4cfa6"/><path d="M262 148h22M262 158h22M262 168h22M262 178h22M262 188h22M262 198h22M262 208h22M262 218h22M262 228h22M262 238h22" stroke="#a87b4f" stroke-width="2"/>
+  <rect x="98" y="90" width="70" height="12" rx="5" fill="#8d96a3"/><rect x="168" y="50" width="70" height="12" rx="5" fill="#8d96a3"/>
+  <rect x="240" y="130" width="70" height="12" rx="5" fill="#8d96a3"/>
+  <line x1="300" y1="142" x2="300" y2="180" stroke="#555" stroke-width="2"/><circle cx="300" cy="186" r="9" fill="#e86a6a"/><g transform="translate(212 36) scale(0.9)" fill="#3d3d3d">
+      <ellipse cx="0" cy="0" rx="22" ry="14"/><circle cx="-18" cy="-10" r="12"/>
+      <path d="M-27 -18l3-12 7 9zM-15 -20l6-10 3 12z"/>
+      <path d="M22 0q18 -4 16 -20" stroke="#3d3d3d" stroke-width="5" fill="none" stroke-linecap="round"/>
+      <circle cx="-22" cy="-11" r="1.6" fill="#fff"/><circle cx="-14" cy="-11" r="1.6" fill="#fff"/></g>
+</svg>
